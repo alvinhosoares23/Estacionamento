@@ -1,38 +1,20 @@
-# DIO - Trilha .NET - Fundamentos
-www.dio.me
+Sistema de Gerenciamento de Estacionamento
+Este projeto consiste na implementação de um sistema de gerenciamento de estacionamento.
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de fundamentos, da trilha .NET da DIO.
+Contexto
+O sistema foi criado para atender às necessidades de um estacionamento, permitindo o gerenciamento dos veículos estacionados e a realização de operações como adicionar veículos, remover veículos (com cálculo do valor cobrado pelo período de estacionamento) e listar os veículos presentes.
 
-## Contexto
-Você foi contratado para construir um sistema para um estacionamento, que será usado para gerenciar os veículos estacionados e realizar suas operações, como por exemplo adicionar um veículo, remover um veículo (e exibir o valor cobrado durante o período) e listar os veículos.
-
-## Proposta
-Você precisará construir uma classe chamada "Estacionamento", conforme o diagrama abaixo:
-![Diagrama de classe estacionamento](diagrama_classe_estacionamento.png)
-
-A classe contém três variáveis, sendo:
-
-**precoInicial**: Tipo decimal. É o preço cobrado para deixar seu veículo estacionado.
-
-**precoPorHora**: Tipo decimal. É o preço por hora que o veículo permanecer estacionado.
-
-**veiculos**: É uma lista de string, representando uma coleção de veículos estacionados. Contém apenas a placa do veículo.
-
-A classe contém três métodos, sendo:
-
-**AdicionarVeiculo**: Método responsável por receber uma placa digitada pelo usuário e guardar na variável **veiculos**.
-
-**RemoverVeiculo**: Método responsável por verificar se um determinado veículo está estacionado, e caso positivo, irá pedir a quantidade de horas que ele permaneceu no estacionamento. Após isso, realiza o seguinte cálculo: **precoInicial** * **precoPorHora**, exibindo para o usuário.
-
-**ListarVeiculos**: Lista todos os veículos presentes atualmente no estacionamento. Caso não haja nenhum, exibir a mensagem "Não há veículos estacionados".
-
-Por último, deverá ser feito um menu interativo com as seguintes ações implementadas:
-1. Cadastrar veículo
-2. Remover veículo
-3. Listar veículos
-4. Encerrar
-
-
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+Funcionalidades
+Adicionar veículo: Permite adicionar um veículo ao estacionamento, registrando apenas a placa do veículo.
+Remover veículo: Verifica se um veículo está estacionado, solicita a quantidade de horas que ele permaneceu no estacionamento e calcula o valor a ser cobrado com base nas taxas definidas.
+Listar veículos: Exibe a lista de todos os veículos atualmente estacionados no sistema.
+Como Usar
+Clone este repositório para o seu ambiente local.
+Abra o projeto em seu ambiente de desenvolvimento preferido.
+Compile e execute o projeto.
+Siga as instruções no console para interagir com o sistema de gerenciamento de estacionamento.
+Tecnologias Utilizadas
+C#
+.NET
+Autor
+Álvaro Jr. Soares
